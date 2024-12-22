@@ -13,13 +13,25 @@ btn1.addEventListener('click', () => {
 })
 btn2.addEventListener('click', () => {
     btnSelected(btn2)
+    if (btn1.className === 'active') {
+        btn2.removeEventListener('click', btnSelected(btn2))
+    }
 })
 btn3.addEventListener('click', () => {
     btnSelected(btn3)
+    if (btn1.className === 'active' || btn2.className === 'active') {
+        btn3.removeEventListener('click', btnSelected(btn3))
+    }
 })
 btn4.addEventListener('click', () => {
     btnSelected(btn4)
+    if (btn1.className === 'active' || btn2.className === 'active' || btn3.className === 'active') {
+        btn4.removeEventListener('click', btnSelected(btn4))
+    }
 })
 btn5.addEventListener('click', () => {
     btnSelected(btn5)
+    if (btn1.className === 'active' || btn2.className === 'active' || btn3.className === 'active' || btn4.className === 'active') {
+        btn5.removeEventListener('click', btnSelected(btn5))
+    }
 })
