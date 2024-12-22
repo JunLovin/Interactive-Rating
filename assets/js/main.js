@@ -15,6 +15,10 @@ btn2.addEventListener('click', () => {
     btnSelected(btn2)
     if (btn1.className === 'active') {
         btn2.removeEventListener('click', btnSelected(btn2))
+    } if (btn2.className === 'active') {
+        btn1.addEventListener('click', () => {
+            btn1.classList.remove('active')
+        })
     }
 })
 btn3.addEventListener('click', () => {
