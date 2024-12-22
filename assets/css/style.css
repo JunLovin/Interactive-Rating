@@ -86,6 +86,11 @@ section p {
     background-color: var(--white);
 }
 
+.buttons .active:hover {
+    color: var(--very-dark-blue);
+    background-color: var(--white);
+}
+
 .submit-btn {
     display: grid;
     text-align: center;
