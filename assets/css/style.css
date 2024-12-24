@@ -124,3 +124,75 @@ section p {
 .attribution a {
     color: var(--orange);
 }
+
+/* Thanks State */
+
+#thanks-state {
+    display: none;
+    text-align: center;
+}
+
+#thanks-state .phoneImg {
+    padding: 2rem 0 0 0;
+    width: 100%;
+    text-align: center;
+}
+
+#thanks-state .p {
+    display: flex;
+    justify-content: center;
+}
+
+#thanks-state .selected-stars {
+    width: 65%;
+    padding: .3rem 0;
+    text-align: center;
+    margin: 3rem 0 0 0;
+    background-color: var(--light-gray-opacity);
+    border-radius: 4rem;
+    color: var(--orange);
+}
+
+#thanks-state .thanks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+#thanks-state .thanks p {
+    width: 100%;
+}
+
+/* Mobile Design */
+
+@media only screen and (max-width: 480px) {
+    main section {
+        width: 75%;
+        height: 60%;
+    }
+    .buttons {
+        height: 11%;
+    }
+    .buttons button{
+        width: 16%;
+        height: 100%;
+        margin-right: .4rem;
+    }
+    #thanks-state .selected-stars {
+        width: 80%;
+        padding: .5rem 0 .3rem 0
+    }
+}
+
+/* Laptop Design */
+
+@media only screen and (max-width: 1400px) {
+    main section {
+        width: 30%;
+        height: 65%;
+    }
+    .buttons button {
+        width: 14%;
+    }
+}
